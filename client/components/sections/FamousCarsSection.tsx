@@ -11,7 +11,7 @@ const featuredCars = [
     reviews: 128,
     badge: "Bestseller",
     specs: ["762 HP", "0-60 in 2.5s", "Hybrid Electric"],
-    emoji: "🔴",
+    image: "https://images.pexels.com/photos/30453079/pexels-photo-30453079.jpeg",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const featuredCars = [
     reviews: 95,
     badge: "Top Rated",
     specs: ["1001 HP", "0-60 in 2.5s", "Hybrid"],
-    emoji: "🟡",
+    image: "https://images.pexels.com/photos/29157405/pexels-photo-29157405.png",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const featuredCars = [
     reviews: 216,
     badge: "Popular",
     specs: ["640 HP", "0-60 in 2.7s", "Twin-Turbo"],
-    emoji: "⚪",
+    image: "https://images.pexels.com/photos/34043220/pexels-photo-34043220.jpeg",
   },
   {
     id: 4,
@@ -47,7 +47,7 @@ const featuredCars = [
     reviews: 342,
     badge: "New",
     specs: ["1020 HP", "0-60 in 1.99s", "All-Electric"],
-    emoji: "🔵",
+    image: "https://images.pexels.com/photos/27243718/pexels-photo-27243718.jpeg",
   },
   {
     id: 5,
@@ -59,7 +59,7 @@ const featuredCars = [
     reviews: 156,
     badge: "Exclusive",
     specs: ["710 HP", "0-60 in 2.8s", "Twin-Turbo"],
-    emoji: "🟠",
+    image: "https://images.pexels.com/photos/27985144/pexels-photo-27985144.jpeg",
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ const featuredCars = [
     reviews: 189,
     badge: "Luxury",
     specs: ["625 HP", "0-60 in 3.0s", "V12 Hybrid"],
-    emoji: "⚫",
+    image: "https://images.pexels.com/photos/16120593/pexels-photo-16120593.jpeg",
   },
 ];
 
