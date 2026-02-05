@@ -15,9 +15,9 @@ const galleryImages = [
   },
   {
     id: 3,
-    title: "Genesis G80 Luxury Sedan",
-    image: "https://images.pexels.com/photos/32512194/pexels-photo-32512194.jpeg",
-    category: "Luxury Sedans",
+    title: "Red Tesla Model 3",
+    image: "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
+    category: "Electric Vehicles",
   },
   {
     id: 4,
@@ -33,8 +33,8 @@ const galleryImages = [
   },
   {
     id: 6,
-    title: "Black Luxury Sedan",
-    image: "https://images.pexels.com/photos/32726124/pexels-photo-32726124.jpeg",
+    title: "Genesis G80 Luxury Sedan",
+    image: "https://images.pexels.com/photos/32512194/pexels-photo-32512194.jpeg",
     category: "Luxury Sedans",
   },
 ];
