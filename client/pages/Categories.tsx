@@ -49,26 +49,34 @@ export default function Categories() {
                 title: "Sports Cars",
                 description:
                   "High-performance machines for thrill seekers",
-                emoji: "🏁",
+                image: "https://images.pexels.com/photos/31032661/pexels-photo-31032661.jpeg",
               },
               {
                 title: "Electric Vehicles",
                 description: "Eco-friendly luxury with cutting-edge tech",
-                emoji: "⚡",
+                image: "https://images.pexels.com/photos/27243718/pexels-photo-27243718.jpeg",
               },
               {
                 title: "Luxury Sedans",
                 description: "Sophisticated comfort and refinement",
-                emoji: "👑",
+                image: "https://images.pexels.com/photos/19758551/pexels-photo-19758551.jpeg",
               },
             ].map((cat, idx) => (
               <div
                 key={idx}
-                className="p-6 bg-background border border-border rounded-lg"
+                className="bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <p className="text-4xl mb-3">{cat.emoji}</p>
-                <h3 className="font-bold text-foreground mb-2">{cat.title}</h3>
-                <p className="text-sm text-muted-foreground">{cat.description}</p>
+                <div className="h-40 overflow-hidden">
+                  <img
+                    src={cat.image}
+                    alt={cat.title}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-bold text-foreground mb-2">{cat.title}</h3>
+                  <p className="text-sm text-muted-foreground">{cat.description}</p>
+                </div>
               </div>
             ))}
           </div>
