@@ -1,84 +1,103 @@
 import Layout from "@/components/Layout";
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { Zap, Gauge, Leaf, Shield } from "lucide-react";
+
+const categories = [
+  {
+    id: 1,
+    name: "Sports Cars",
+    description: "High-performance machines built for speed and precision",
+    icon: Gauge,
+    image: "https://images.pexels.com/photos/30735110/pexels-photo-30735110.jpeg",
+    count: 45,
+  },
+  {
+    id: 2,
+    name: "Electric Vehicles",
+    description: "Eco-friendly luxury with cutting-edge technology",
+    icon: Zap,
+    image: "https://images.pexels.com/photos/27243718/pexels-photo-27243718.jpeg",
+    count: 38,
+  },
+  {
+    id: 3,
+    name: "SUVs & Crossovers",
+    description: "Spacious comfort with commanding presence",
+    icon: Shield,
+    image: "https://images.pexels.com/photos/18311311/pexels-photo-18311311.jpeg",
+    count: 52,
+  },
+  {
+    id: 4,
+    name: "Luxury Sedans",
+    description: "Ultimate sophistication and refinement",
+    icon: Leaf,
+    image: "https://images.pexels.com/photos/31040150/pexels-photo-31040150.jpeg",
+    count: 41,
+  },
+];
 
 export default function Categories() {
   return (
     <Layout>
-      <div className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Car Categories
-          </h1>
-          <p className="text-xl text-muted-foreground mb-12">
-            Browse our complete collection of luxury and performance vehicles
-            organized by category
-          </p>
-
-          <div className="bg-card border border-border rounded-lg p-12 overflow-hidden">
-            <div className="h-48 mb-6 rounded-lg overflow-hidden -mx-12 -mt-12">
-              <img
-                src="https://images.pexels.com/photos/31032661/pexels-photo-31032661.jpeg"
-                alt="Sports car racing"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h2 className="text-2xl font-bold text-foreground mb-4">
-              Categories Coming Soon
-            </h2>
-            <p className="text-muted-foreground mb-8 max-w-md mx-auto">
-              We're working on a comprehensive showcase of all our vehicle
-              categories. In the meantime, explore our featured cars on the home
-              page.
+      <div className="py-16 md:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Browse Our Categories
+            </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Find your perfect vehicle from our diverse collection of luxury and
+              performance cars
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-accent-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity"
-              >
-                Back to Home
-                <ArrowRight size={20} />
-              </Link>
-            </div>
           </div>
 
-          {/* Feature Preview */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-            {[
-              {
-                title: "Sports Cars",
-                description:
-                  "High-performance machines for thrill seekers",
-                image: "https://images.pexels.com/photos/31032661/pexels-photo-31032661.jpeg",
-              },
-              {
-                title: "Electric Vehicles",
-                description: "Eco-friendly luxury with cutting-edge tech",
-                image: "https://images.pexels.com/photos/27243718/pexels-photo-27243718.jpeg",
-              },
-              {
-                title: "Luxury Sedans",
-                description: "Sophisticated comfort and refinement",
-                image: "https://images.pexels.com/photos/19758551/pexels-photo-19758551.jpeg",
-              },
-            ].map((cat, idx) => (
-              <div
-                key={idx}
-                className="bg-background border border-border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
-              >
-                <div className="h-40 overflow-hidden">
-                  <img
-                    src={cat.image}
-                    alt={cat.title}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                  />
+          {/* Categories Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {categories.map((category) => {
+              const IconComponent = category.icon;
+              return (
+                <div
+                  key={category.id}
+                  className="group cursor-pointer bg-card border border-border rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                >
+                  {/* Image Container */}
+                  <div className="h-40 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center overflow-hidden relative">
+                    <img
+                      src={category.image}
+                      alt={category.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                        <IconComponent
+                          size={20}
+                          className="text-accent"
+                        />
+                      </div>
+                      <h3 className="font-bold text-lg text-foreground">
+                        {category.name}
+                      </h3>
+                    </div>
+                    <p className="text-muted-foreground text-sm mb-4">
+                      {category.description}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-semibold text-accent bg-accent/10 px-3 py-1 rounded-full">
+                        {category.count} vehicles
+                      </span>
+                      <span className="text-accent font-semibold group-hover:translate-x-1 transition-transform">
+                        →
+                      </span>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-foreground mb-2">{cat.title}</h3>
-                  <p className="text-sm text-muted-foreground">{cat.description}</p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
