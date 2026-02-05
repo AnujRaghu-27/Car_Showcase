@@ -61,9 +61,11 @@ export default function CategoriesSection() {
               >
                 {/* Image Container */}
                 <div className="h-40 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center overflow-hidden relative">
-                  <div className="text-6xl group-hover:scale-110 transition-transform duration-300">
-                    {category.image}
-                  </div>
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
 
                 {/* Content */}
