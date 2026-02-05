@@ -43,9 +43,16 @@ export default function Categories() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
               Browse Our Categories
             </h1>
+            <div className="h-64 rounded-lg overflow-hidden mb-8">
+              <img
+                src="https://images.pexels.com/photos/35113540/pexels-photo-35113540.jpeg"
+                alt="Luxury Sports Car"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Find your perfect vehicle from our diverse collection of luxury and
               performance cars
