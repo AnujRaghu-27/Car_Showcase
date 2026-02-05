@@ -7,7 +7,7 @@ const categories = [
     name: "Sports Cars",
     description: "High-performance machines built for speed and precision",
     icon: Gauge,
-    image: "https://images.pexels.com/photos/30735110/pexels-photo-30735110.jpeg",
+    image: "https://images.pexels.com/photos/31618532/pexels-photo-31618532.jpeg",
     count: 45,
   },
   {
@@ -15,7 +15,7 @@ const categories = [
     name: "Electric Vehicles",
     description: "Eco-friendly luxury with cutting-edge technology",
     icon: Zap,
-    image: "https://images.pexels.com/photos/27243718/pexels-photo-27243718.jpeg",
+    image: "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
     count: 38,
   },
   {
@@ -23,7 +23,7 @@ const categories = [
     name: "SUVs & Crossovers",
     description: "Spacious comfort with commanding presence",
     icon: Shield,
-    image: "https://images.pexels.com/photos/18311311/pexels-photo-18311311.jpeg",
+    image: "https://images.pexels.com/photos/10820126/pexels-photo-10820126.jpeg",
     count: 52,
   },
   {
@@ -31,7 +31,7 @@ const categories = [
     name: "Luxury Sedans",
     description: "Ultimate sophistication and refinement",
     icon: Leaf,
-    image: "https://images.pexels.com/photos/31040150/pexels-photo-31040150.jpeg",
+    image: "https://images.pexels.com/photos/32726124/pexels-photo-32726124.jpeg",
     count: 41,
   },
 ];
