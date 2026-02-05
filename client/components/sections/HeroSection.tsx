@@ -50,7 +50,7 @@ export default function HeroSection() {
         {/* Right Side - Featured Car Image */}
         <div className="relative h-96 md:h-full min-h-96 rounded-lg overflow-hidden">
           <img
-            src="https://images.pexels.com/photos/30453079/pexels-photo-30453079.jpeg"
+            src="https://images.pexels.com/photos/35113540/pexels-photo-35113540.jpeg"
             alt="Ferrari SF90 Featured Car"
             className="absolute inset-0 w-full h-full object-cover"
           />
