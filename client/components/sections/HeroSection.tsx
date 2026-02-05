@@ -49,20 +49,12 @@ export default function HeroSection() {
 
         {/* Right Side - Featured Car Image */}
         <div className="relative h-96 md:h-full min-h-96 rounded-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/30453079/pexels-photo-30453079.jpeg"
+            alt="Ferrari SF90 Featured Car"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-lg" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center">
-              <div className="w-64 h-40 bg-gradient-to-br from-accent to-accent/70 rounded-lg opacity-80 flex items-center justify-center mb-4 mx-auto">
-                <div className="text-accent-foreground text-center">
-                  <p className="text-4xl font-bold">🏎️</p>
-                  <p className="text-sm mt-2 font-semibold">Featured Car</p>
-                </div>
-              </div>
-              <p className="text-primary-foreground/80 text-sm">
-                Premium Supercars Awaiting You
-              </p>
-            </div>
-          </div>
           <div className="absolute bottom-6 left-6 right-6 bg-primary-foreground/10 backdrop-blur-sm rounded-lg p-4 border border-primary-foreground/20">
             <p className="text-sm text-primary-foreground/80">
               2024 Limited Edition
