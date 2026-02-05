@@ -15,9 +15,9 @@ const galleryImages = [
   },
   {
     id: 3,
-    title: "Genesis G80 Electric",
-    image: "https://images.pexels.com/photos/11262462/pexels-photo-11262462.jpeg",
-    category: "Electric Vehicles",
+    title: "Genesis G80 Luxury Sedan",
+    image: "https://images.pexels.com/photos/32512194/pexels-photo-32512194.jpeg",
+    category: "Luxury Sedans",
   },
   {
     id: 4,
