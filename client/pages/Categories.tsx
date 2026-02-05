@@ -15,8 +15,14 @@ export default function Categories() {
             organized by category
           </p>
 
-          <div className="bg-card border border-border rounded-lg p-12">
-            <p className="text-6xl mb-4">🚗</p>
+          <div className="bg-card border border-border rounded-lg p-12 overflow-hidden">
+            <div className="h-48 mb-6 rounded-lg overflow-hidden -mx-12 -mt-12">
+              <img
+                src="https://images.pexels.com/photos/31032661/pexels-photo-31032661.jpeg"
+                alt="Sports car racing"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <h2 className="text-2xl font-bold text-foreground mb-4">
               Categories Coming Soon
             </h2>
