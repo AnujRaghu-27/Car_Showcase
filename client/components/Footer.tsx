@@ -92,7 +92,9 @@ export default function Footer() {
 
           {/* CTA Section */}
           <div className="bg-accent/10 rounded-lg p-4">
-            <h3 className="font-semibold mb-3">Ready to Find Your Dream Car?</h3>
+            <h3 className="font-semibold mb-3">
+              Ready to Find Your Dream Car?
+            </h3>
             <p className="text-primary-foreground/80 text-sm mb-4">
               Get personalized assistance from our experts today.
             </p>

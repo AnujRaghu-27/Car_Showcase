@@ -4,37 +4,43 @@ const galleryImages = [
   {
     id: 1,
     title: "Ferrari SF90 Stradale",
-    image: "https://images.pexels.com/photos/26928375/pexels-photo-26928375.png",
+    image:
+      "https://images.pexels.com/photos/26928375/pexels-photo-26928375.png",
     category: "Ferrari Collection",
   },
   {
     id: 2,
     title: "Red Honda NSX",
-    image: "https://images.pexels.com/photos/31618532/pexels-photo-31618532.jpeg",
+    image:
+      "https://images.pexels.com/photos/31618532/pexels-photo-31618532.jpeg",
     category: "Sports Cars",
   },
   {
     id: 3,
     title: "Red Tesla Model 3",
-    image: "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
+    image:
+      "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
     category: "Electric Vehicles",
   },
   {
     id: 4,
     title: "Luxury Black SUV",
-    image: "https://images.pexels.com/photos/10820126/pexels-photo-10820126.jpeg",
+    image:
+      "https://images.pexels.com/photos/10820126/pexels-photo-10820126.jpeg",
     category: "SUVs",
   },
   {
     id: 5,
     title: "White Lamborghini",
-    image: "https://images.pexels.com/photos/14380633/pexels-photo-14380633.jpeg",
+    image:
+      "https://images.pexels.com/photos/14380633/pexels-photo-14380633.jpeg",
     category: "Lamborghini Fleet",
   },
   {
     id: 6,
     title: "Genesis G80 Luxury Sedan",
-    image: "https://images.pexels.com/photos/32512194/pexels-photo-32512194.jpeg",
+    image:
+      "https://images.pexels.com/photos/32512194/pexels-photo-32512194.jpeg",
     category: "Luxury Sedans",
   },
 ];

@@ -42,7 +42,9 @@ export default function HeroSection() {
             </div>
             <div>
               <p className="text-3xl font-bold text-accent">10K+</p>
-              <p className="text-primary-foreground/80 text-sm">Happy Customers</p>
+              <p className="text-primary-foreground/80 text-sm">
+                Happy Customers
+              </p>
             </div>
           </div>
         </div>

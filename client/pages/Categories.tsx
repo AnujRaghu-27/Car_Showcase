@@ -7,7 +7,8 @@ const categories = [
     name: "Sports Cars",
     description: "High-performance machines built for speed and precision",
     icon: Gauge,
-    image: "https://images.pexels.com/photos/31618532/pexels-photo-31618532.jpeg",
+    image:
+      "https://images.pexels.com/photos/31618532/pexels-photo-31618532.jpeg",
     count: 45,
   },
   {
@@ -15,7 +16,8 @@ const categories = [
     name: "Electric Vehicles",
     description: "Eco-friendly luxury with cutting-edge technology",
     icon: Zap,
-    image: "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
+    image:
+      "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
     count: 38,
   },
   {
@@ -23,7 +25,8 @@ const categories = [
     name: "SUVs & Crossovers",
     description: "Spacious comfort with commanding presence",
     icon: Shield,
-    image: "https://images.pexels.com/photos/10820126/pexels-photo-10820126.jpeg",
+    image:
+      "https://images.pexels.com/photos/10820126/pexels-photo-10820126.jpeg",
     count: 52,
   },
   {
@@ -31,7 +34,8 @@ const categories = [
     name: "Luxury Sedans",
     description: "Ultimate sophistication and refinement",
     icon: Leaf,
-    image: "https://images.pexels.com/photos/32726124/pexels-photo-32726124.jpeg",
+    image:
+      "https://images.pexels.com/photos/32726124/pexels-photo-32726124.jpeg",
     count: 41,
   },
 ];
@@ -54,8 +58,8 @@ export default function Categories() {
               />
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Find your perfect vehicle from our diverse collection of luxury and
-              performance cars
+              Find your perfect vehicle from our diverse collection of luxury
+              and performance cars
             </p>
           </div>
 
@@ -81,10 +85,7 @@ export default function Categories() {
                   <div className="p-6">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                        <IconComponent
-                          size={20}
-                          className="text-accent"
-                        />
+                        <IconComponent size={20} className="text-accent" />
                       </div>
                       <h3 className="font-bold text-lg text-foreground">
                         {category.name}

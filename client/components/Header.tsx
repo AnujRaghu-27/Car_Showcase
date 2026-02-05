@@ -12,7 +12,9 @@ export default function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-lg">C</span>
+              <span className="text-accent-foreground font-bold text-lg">
+                C
+              </span>
             </div>
             <span className="font-bold text-lg text-foreground hidden sm:inline">
               CarShow
