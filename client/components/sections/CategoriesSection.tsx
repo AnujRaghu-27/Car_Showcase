@@ -14,7 +14,7 @@ const categories = [
     name: "Electric Vehicles",
     description: "Eco-friendly luxury with cutting-edge technology",
     icon: Zap,
-    image: "https://images.pexels.com/photos/11262462/pexels-photo-11262462.jpeg",
+    image: "https://images.pexels.com/photos/12554294/pexels-photo-12554294.jpeg",
     count: 38,
   },
   {
