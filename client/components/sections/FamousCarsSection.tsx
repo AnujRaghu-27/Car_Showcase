@@ -105,9 +105,11 @@ export default function FamousCarsSection() {
             >
               {/* Image Container */}
               <div className="relative h-48 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center overflow-hidden">
-                <div className="text-7xl group-hover:scale-110 transition-transform duration-300">
-                  {car.emoji}
-                </div>
+                <img
+                  src={car.image}
+                  alt={car.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
 
                 {/* Badge */}
                 <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-bold">
